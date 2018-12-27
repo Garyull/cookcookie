@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-fluid{
+    padding: 0px;
+}
+
+
+/* header公共样式 */
+header div{
+    align-items:center;
+    justify-content: space-around;
+}
+header:first-child{
+    border-bottom:1px solid #f1a7a7;
+}
+#head_left a img{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin:0;
+    padding:0; 
+    vertical-align: top;
+}
+#head_left a span{
+    
+    font-family:华文云彩;
+    color: #f1a7a7;
+    
+    display: inline-block;
+    margin: 0 auto;
+    padding:20px 0 0 0;;
+    
+    font-size: 30px;
+}
+#login_no{
+    display: none;
+    width:100%;
+    min-height: 65px;
+    justify-content: space-around;
+    align-items:center;
+}
+#login_no a{
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #f1a7a7;
+    border-radius: 20px;
+}
+#login_yes{
+    display: inline-flex;
+    width: 100%;
+    min-height: 65px;
+    border:0;
+    justify-content: space-around;
+}
+#login_yes img{
+    width: 40px;
+    height: 40px;
+    border:3px solid #f1a7a7;
+    border-radius: 50%;
+    background:#fff;
+    padding: 0;
+}
+
+#login_yes ul{
+    height: 100%;
+    display:inline-flex;
+    list-style: none;
+    align-items:center;
+    margin:0 auto;
+}
+#login_yes #headimg{
+    border:0;
+}
+#login_yes ul li{
+    width: 80px;
+    font-family:华文云彩;
+    color: #f1a7a7;
+    line-height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    border:1px solid #f1a7a7;
+    position: relative;
+    border-radius: 20px;
+}
+#login_yes ul li ul{
+    display: block;
+    padding: 0;
+    opacity: 0.3;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s ease;
+    position: absolute;
+    left: -1px;
+}
+#login_yes ul li span{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#login_yes ul li:hover ul{
+    opacity: 1;
+    height: 325%;
+}
+#login_yes ul li:hover span{
+    background: #f1a7a7;
+    color: #fff;
+    border-radius: 20px;
+}
+#login_yes ul a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #f1a7a7;
+    border-radius: 20px;
+}
+#head_left,#head_center,#head_right{
+    min-height: 65px;
+    padding: 0px;
+}
+header .row div form{
+    position: absolute;
+    top: 15%;
+    right: 25%;
+    width: 60%;
+    display:inline-block;
+}
+header .row div form input{
+    width: 75%;
+    height: 50px;
+    padding:0 40px 0 13px;
+    border-radius: 42px;
+    border: 2px solid #f1a7a7;
+    transition: 0.5s linear;
+    position: absolute;
+    right: 0;
+    outline: none;
+}
+header  .row div form input:hover{
+    width: 100%;
+}
+header  .row div form button{
+    height: 47px;
+    width: 47px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    background: none;
+    top: 5%;
+    right: 0;
+}
+#login_yes button{
+    height: 40px;
+    width: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    background: none;
+    top: 0;
+    right: 0;
+}
+header  .row div form button:before,#login_yes button:before{
+    content: "\25bc";
+    font-family: FontAwesome;
+    color: #f1a7a7;
+}
+
+/* nav公共样式 */
+
+nav,#foot-d1 p,#foot-d2{
+    background: #f6eeee;
+}
+nav div ul{
+    border-bottom: 2px solid #f1a7a7;
+}
+nav a{
+    color: #a19d9d;
+}
+nav a:hover{
+    color: #747070;
+    border-bottom: 2px solid #f1a7a7;
+    margin-top: -2px;
+}
+.nav_2{
+    min-width:100px;
+}
+.nav_3d{
+    min-width:256px;
+}
+
+
+
+
+
+
+/* footer公共样式 */
+#footer_bottom{
+    width:100%;
+    text-align: center;
+}
+footer,footer div{
+    border-top: 2px solid #f1a7a7;
+}
+#foot-d1 {
+    border: 0;
+    text-align: center;
+}
+.footer_img{
+    display: block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+}
+.footer_p{
+    color: #a19d9d;
+    margin: 0px;
+    padding: 15px;
+}
+.footer_p strong{
+    color: rgb(56, 53, 53); 
+}
+.footer_a{
+    color: #a19d9d;
+    text-decoration: none;
+    text-align: center;
+}
+.footer_a:hover{
+    color: #f1a7a7;
+    text-decoration: none;
+    text-align: center;
+}
+#foot-d3 ul li a{
+    color: #f1a7a7;
+    text-decoration: none;
+    text-align: center;
+}
+#foot-d3 ul li a img{
+    display: block;
+    margin: 0 auto;
+}
+
+/* 底部悬浮窗 */
+aside,aside>div{
+    width: 100%;
+    height: 100%;
+}
+aside>div{
+    position: relative;
+}
+aside ul{
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    bottom: 30px;
+    right: -50px;
+    padding: 0px;
+    margin: 0px;
+    transition: .5s linear;
+}
+aside ul li{
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+    border:1px solid #b6aeae;
+    background: #a19d9d;
+    opacity: 0.5;
+    margin-bottom: 3px;
+}
+aside ul li:hover{
+    opacity: 0.9;
+}
+aside ul li img{
+    width: 50px;
+    height: 50px;
+}

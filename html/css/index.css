@@ -1,0 +1,135 @@
+/* banner */
+#wrap img{
+    width: 100%;
+    max-height: 480px;
+    border:1px solid #ffcaca;
+    border-radius: 20px;
+}
+
+.carousel-caption {
+    position: absolute;
+    font-size: 20px;;
+    right: 0%;
+    bottom: 20px;
+    left: 70%;
+    z-index: 10;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+    background: #f19f9f;
+    text-align: center;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow:5px 5px 5px #906363;
+    background-image:linear-gradient(to top,#f1a7a7 0%,#f19f9f 100%);
+  }
+
+/* section */
+#mycar,#mycar1,#wrap{
+    border: 1px solid #f1a7a7;
+    margin: 5px;
+    border-radius:10px;
+}
+#mycar>a>span, #mycar1>a>span ,#wrap>a>span{
+    width: 30px;
+    height: 40px;
+}
+
+#mycar>a, #mycar1>a,#wrap>a {
+    background-color: rgb(182, 177, 177);
+    margin: 5px;
+    width: 0%;
+    height: 15%;
+    top: 40%;
+    transition: 0.5s linear;
+}
+#mycar:hover>a,#mycar1:hover>a,#wrap:hover>a{
+    width: 7.5%;
+}
+
+#mycar ul,#mycar1 ul,#wrap ul{
+    margin-top: 20px;
+    bottom: -15px;
+}
+
+#mycar ul li ,#mycar1 ul li,#wrap ul li{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    border:1px solid #a19d9d;
+}
+.carousel-inner{
+    width: 80%;
+    margin: 20px auto;
+}
+.carousel-indicators .active {
+    background-color: #f1a7a7;
+}
+.carousel-indicators li:hover{
+    background-color:#ffcaca; 
+}
+.card-body>div>img{
+    width: 100%;
+    height: 200px;
+    transition: 750ms linear;
+}
+.card-body:hover>div>img{
+    transform: scale(1.2);
+}
+
+.carousel-item>.row>div{
+    margin-bottom:40px;
+}
+.carousel-item>.row>div>h3{
+    color: #a19d9d;
+    margin-top: 40px;
+    text-align: center;
+}
+.card-body{
+    color: #a19d9d;
+    padding: 5px;
+    background-color: #F6EEEE;
+}
+.card-body:hover{
+    color: #3f3f3f;
+    text-decoration: none;
+}
+.card-body>div>h5,.card-body>div>h6{
+    font-weight: 700;
+    text-align: center;
+}
+.card-body>div{
+    overflow: hidden;
+}
+
+.card-body-d1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    overflow: hidden;
+    height: 100px;
+    transition: 0.75s linear;
+    opacity: 1;
+}
+.card-body-d2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around; 
+    overflow: hidden;
+    height: 0px;
+    transition: 0.75s linear;
+    opacity: 0;
+}
+
+.card-body:hover .card-body-d1{
+    height: 0px;
+    opacity: 0;
+}
+
+.card-body:hover .card-body-d2{
+    height: 100px;
+    opacity: 1;
+}

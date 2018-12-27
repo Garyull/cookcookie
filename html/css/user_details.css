@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#user_updata{
+    padding: 20px;
+}
+#user_updata{
+    max-width: 1200px;
+    margin: 50px auto;
+    background: #fff;
+    border:2px solid #dfdcdc;
+    border-radius: 15px;
+}#user_updatad h3{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+
+}
+#user_updata h3 .col-6{
+    text-align: center;
+    font-size: 35px;
+    font-family:STFangsong;
+    color: #a19d9d;
+}
+#user_updata h3 span img{
+    width: 100%;
+    padding: 0 15px;
+}
+
+
+section>div>div>ul>li>a{
+    margin: 5px;
+    box-sizing: border-box;
+}
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-radius: 0.4rem;
+}
+
+.nav-tabs .nav-link.active {
+    color: #fff;
+    background-color:#f1a7a7 ;
+    border: 1px solid #f1a7a7;
+}
+.nav-link{
+    text-align: center;
+    color: #f1a7a7;
+}
+.nav-tabs .nav-link:hover{
+    background: #f1a7a7;
+    color: #fff;
+    border:  1px solid #f1a7a7;
+}
+.tab-content>div{
+    width: 100%;
+    margin: 30px;
+}
+.tab-content>div>form{
+    width:100%;
+}
+
+.tab-content>div span{
+    display:inline-block;
+    width: 25%;
+    text-align: right;
+    height: 45px;
+    line-height: 45px;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.tab-content input,.tab-content select,.tab-content a,#signArea{
+    box-sizing: border-box;
+    padding: 11px;
+    width: 200px;
+    margin: 0 auto 15px;
+    border:1px solid #d4d1d1;
+    border-radius: 5px;
+    outline: none;
+}
+#signSpan{
+    vertical-align: top;
+    margin-bottom: 90px;
+}
+#signArea{
+    margin-bottom:-15px;
+    resize: none;
+}
+#signShow,#code_yzm{
+    display: none;
+    margin: 15px;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    background: #f1a7a7;
+    color: #f7f7f2;
+    vertical-align: top;
+}
+.tab-content select{
+    width: 120px;
+}
+.tab-content a{
+    display: inline-block;
+    vertical-align: middle;
+    margin: -50px 0px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #f1a7a7;
+}
+.tab-content a:hover{
+    background: #f1a7a7;
+    color: #fff;
+}
+
+.btnChange{
+    display: block;
+    background: #f7f7f2;
+    color: #b6aeae;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btnChange:hover{
+    background: #b6aeae;
+    color: #f7f7f2;
+}
+
+#v_container{
+    display: inline-block;
+    width: 100px;
+    height: 48px;
+    vertical-align: middle;
+}
+#code_input{
+    width: 125px;
+    font-size: 10px;
+}
+
+#tab2 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:1px solid #f1a7a7;
+}
+
+#phone_yzm,#email_yz,#email_active{
+    color: #fff;
+    background: #f1a7a7;
+    cursor: pointer;
+}
+
+#headimginput{
+    display: none;
+}

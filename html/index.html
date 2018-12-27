@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CookCookie-首页</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!--header-->
+    <header class="container-fluid">
+        <div class="row">
+            <div id="head_left" class="col-md-3 col-sm-12 border-0">
+                <div class="row">
+                    <a class="" href=""><img class="col-3" src="img/index/quqi.jpg">
+                        <span class="col-8">CookCookie</span>
+                    </a>
+                </div>
+            </div>
+            <div id="head_center" class="col-md-6 col-sm-12">
+                <form>
+                    <input type="text" placeholder="请输入搜索的内容">
+                    <button type="submit"></button>
+                </form>
+            </div>
+            <div id="head_right" class="col-md-3 col-sm-12">
+                <div id="login_no" class="row">
+                    <a href="">QQ登录</a>
+                    <a href="">微博登录</a>
+                    <a href="">用户登录</a>
+                    <a href="">用户注册</a>
+                </div>
+                <div id="login_yes" class="row">
+                    <ul>
+                        <li id="headimg">
+                            <img src="img/login_register/cookielogo.png" alt="">
+                        </li>
+                        <li>
+                            <span>Garyull</span>
+                            <ul>
+                                <li><a href="">个人中心</a></li>
+                                <li><a href="">修改资料</a></li>
+                                <li><a href="#" onclick="login_out()">退出登录</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--nav-->
+    <nav>
+        <div class="container-fluid">
+            <ul class="nav justify-content-around nav_1">
+                <li class="nav-item">
+                    <a id="n1_2" class="nav-link" onclick="nav_2_show('n2_1','n2_2','n2_3','n2_4','n2_5')" href="javascript:void(0)">美食菜单</a>
+                </li>
+                <li class="nav-item">
+                    <a id="n1_3" class="nav-link" onclick="nav_2_show('n2_2','n2_1','n2_3','n2_4','n2_5')" href="javascript:void(0)">饮食健康</a>
+                </li>
+                <li class="nav-item">
+                    <a id="n1_4" class="nav-link" onclick="nav_2_show('n2_3','n2_1','n2_2','n2_4','n2_5')" href="javascript:void(0)">厨具餐具</a>
+                </li>
+                <li class="nav-item">
+                    <a id="n1_5" class="nav-link" onclick="nav_2_show('n2_4','n2_1','n2_2','n2_3','n2_5')" href="javascript:void(0)">美食达人</a>
+                </li>
+                <li class="nav-item">
+                    <a id="n1_6" class="nav-link" onclick="nav_2_show('n2_5','n2_1','n2_2','n2_3','n2_4')" href="javascript:void(0)">视频分享</a>
+                </li>
+            </ul>
+        </div>
+        <div id="n2_1" class="container-fluid" style="display:none">
+            <div id="navbox_1" class="nav flex-nowrap">
+                <ul class="nav justify-content-around flex-column nav_2 ">
+                    <li class="nav-item"><a onclick="nav_3_1_show('nav_3_1_1','nav_3_1_2','nav_3_1_3','nav_3_1_4','nav_3_1_5','nav_3_1_6')"
+                            href="javascript:void(0)" class="nav-link">家常菜谱</a></li>
+                    <li class="nav-item"><a onclick="nav_3_1_show('nav_3_1_2','nav_3_1_1','nav_3_1_3','nav_3_1_4','nav_3_1_5','nav_3_1_6')"
+                            href="javascript:void(0)" class="nav-link">八大菜系</a></li>
+                    <li class="nav-item"><a onclick="nav_3_1_show('nav_3_1_3','nav_3_1_2','nav_3_1_1','nav_3_1_4','nav_3_1_5','nav_3_1_6')"
+                            href="javascript:void(0)" class="nav-link">外国菜系</a></li>
+                    <li class="nav-item"><a onclick="nav_3_1_show('nav_3_1_4','nav_3_1_2','nav_3_1_3','nav_3_1_1','nav_3_1_5','nav_3_1_6')"
+                            href="javascript:void(0)" class="nav-link">各地小吃</a></li>
+                    <li class="nav-item"><a onclick="nav_3_1_show('nav_3_1_5','nav_3_1_2','nav_3_1_3','nav_3_1_4','nav_3_1_1','nav_3_1_6')"
+                            href="javascript:void(0)" class="nav-link">蛋糕烘焙</a></li>
+                    <li class="nav-item"><a onclick="nav_3_1_show('nav_3_1_6','nav_3_1_2','nav_3_1_3','nav_3_1_4','nav_3_1_5','nav_3_1_1')"
+                            href="javascript:void(0)" class="nav-link">调酒饮料</a></li>
+                </ul>
+                <div class="nav_3d">
+                    <ul id="nav_3_1_1" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">凉菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">热菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">海鲜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">主食</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">早餐</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">中餐</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">晚餐</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">靓汤</a></li>
+                    </ul>
+                    <ul id="nav_3_1_2" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">鲁菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">川菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">苏菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">粤菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">浙菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">闽菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">湘菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">徽菜</a></li>
+                    </ul>
+                    <ul id="nav_3_1_3" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">日本菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">韩国菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">泰国菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">意大利菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">西班牙菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">英国菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">法国菜</a></li>
+                    </ul>
+                    <ul id="nav_3_1_4" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">湖北小吃</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">陕西小吃</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">山东小吃</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">浙江小吃</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">四川小吃</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">广东小吃</a></li>
+                    </ul>
+                    <ul id="nav_3_1_5" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">蛋糕</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">慕斯</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">饼干</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">巧克力</a></li>
+                    </ul>
+                    <ul id="nav_3_1_6" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">鸡尾酒</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">保健酒</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">夏日饮品</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">暖冬饮品</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">咖啡</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="n2_2" class="container-fluid" style="display:none">
+            <div id="navbox_2" class="nav flex-nowrap">
+                <ul class="nav justify-content-around flex-column nav_2">
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_2_1','nav_3_2_2','nav_3_2_3','nav_3_2_4','nav_3_2_5')"
+                            href="javascript:void(0)" class="nav-link">功能调理</a></li>
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_2_2','nav_3_2_1','nav_3_2_3','nav_3_2_4','nav_3_2_5')"
+                            href="javascript:void(0)" class="nav-link">脏腑调理</a></li>
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_2_3','nav_3_2_2','nav_3_2_1','nav_3_2_4','nav_3_2_5')"
+                            href="javascript:void(0)" class="nav-link">疾病调理</a></li>
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_2_4','nav_3_2_2','nav_3_2_3','nav_3_2_1','nav_3_2_5')"
+                            href="javascript:void(0)" class="nav-link">健康膳食</a></li>
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_2_5','nav_3_2_2','nav_3_2_3','nav_3_2_4','nav_3_2_1')"
+                            href="javascript:void(0)" class="nav-link">饮食习惯</a></li>
+                </ul>
+                <div class="nav_3d">
+                    <ul id="nav_3_2_1" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">清热去火</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">减脂增肌</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">祛痰润喉</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">健脾开胃</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">乌发</a></li>
+                    </ul>
+                    <ul id="nav_3_2_2" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">补肾</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">养胃</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">壮阳</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">补血</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">促进愈合</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">排毒</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">调理肠胃</a></li>
+                    </ul>
+                    <ul id="nav_3_2_3" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">糖尿病</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">高血压</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">痛风</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">肠胃炎</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">更年期</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">甲状腺</a></li>
+                    </ul>
+                    <ul id="nav_3_2_4" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">美容</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">瘦身</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">食品安全</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">养生妙方</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">食疗保健</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">母婴健康</a></li>
+                    </ul>
+                    <ul id="nav_3_2_5" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">清淡饮食</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">就餐时间</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">果蔬清洗</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">冷热</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">季节</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">荤素搭配</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="n2_3" class="container-fluid" style="display:none">
+            <div id="navbox_3" class="nav flex-nowrap">
+                <ul class="nav justify-content-around flex-column nav_2">
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_3_1','nav_3_3_2','nav_3_3_3','nav_3_3_4','nav_3_5')"
+                            href="javascript:void(0)" class="nav-link">精品厨具</a></li>
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_3_2','nav_3_3_1','nav_3_3_3','nav_3_3_4','nav_3_5')"
+                            href="javascript:void(0)" class="nav-link">精品餐具</a></li>
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_3_3','nav_3_3_2','nav_3_3_1','nav_3_3_4','nav_3_5')"
+                            href="javascript:void(0)" class="nav-link">厨房百科</a></li>
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_3_4','nav_3_3_2','nav_3_3_3','nav_3_3_1','nav_3_5')"
+                            href="javascript:void(0)" class="nav-link">装饰搭配</a></li>
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_3_5','nav_3_3_2','nav_3_3_3','nav_3_3_4','nav_3_1')"
+                            href="javascript:void(0)" class="nav-link">餐桌礼仪</a></li>
+                </ul>
+                <div class="nav_3d">
+                    <ul id="nav_3_3_1" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">锅</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">刀具</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">砧板</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">烤箱</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">微波炉</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">调料盒</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">特殊工具</a></li>
+                    </ul>
+                    <ul id="nav_3_3_2" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">碗</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">盘</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">筷子</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">刀叉</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">勺</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">杯子</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">特殊餐具</a></li>
+                    </ul>
+                    <ul id="nav_3_3_3" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">厨房小妙招</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">合理布局</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">清洁卫生</a></li>
+                    </ul>
+                    <ul id="nav_3_3_4" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">橱柜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">台面</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">水池</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">储存</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">排烟</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">炉灶</a></li>
+                    </ul>
+                    <ul id="nav_3_3_5" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">餐前事项</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">餐桌谈话</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">宴会相关</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">各国习俗</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">仪容仪表</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="n2_4" class="container-fluid" style="display:none">
+            <div id="navbox_4" class="nav flex-nowrap">
+                <ul class="nav justify-content-around flex-column nav_2">
+                    <li class="nav-item"><a onclick="nav_3_4_show('nav_3_4_1','nav_3_4_2','nav_3_4_3','nav_3_4_4')"
+                            href="javascript:void(0)" class="nav-link">我的首页</a></li>
+                    <li class="nav-item"><a onclick="nav_3_4_show('nav_3_4_2','nav_3_4_1','nav_3_4_3','nav_3_4_4')"
+                            href="javascript:void(0)" class="nav-link">我的关注</a></li>
+                    <li class="nav-item"><a onclick="nav_3_4_show('nav_3_4_3','nav_3_4_2','nav_3_4_1','nav_3_4_4')"
+                            href="javascript:void(0)" class="nav-link">我的粉丝</a></li>
+                    <li class="nav-item"><a onclick="nav_3_4_show('nav_3_4_4','nav_3_4_2','nav_3_4_3','nav_3_4_1')"
+                            href="javascript:void(0)" class="nav-link">我的作品</a></li>
+                </ul>
+                <div class="nav_3d">
+                    <ul id="nav_3_4_1" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">今日推荐</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">热门菜谱</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">热门话题</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">热门文章</a></li>
+                    </ul>
+                    <ul id="nav_3_4_2" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">明星大咔</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">同事</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">同学</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">亲戚</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">美食达人</a></li>
+                    </ul>
+                    <ul id="nav_3_4_3" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">粉丝列表</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">粉丝管理</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">黑名单</a></li>
+                    </ul>
+                    <ul id="nav_3_4_4" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">我的菜谱</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">我的投稿</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">赞</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">收藏</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">特别关注</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="n2_5" class="container-fluid" style="display:none">
+            <div id="navbox_5" class="nav flex-nowrap">
+                <ul class="nav justify-content-around flex-column nav_2">
+                    <li class="nav-item"><a onclick="nav_3_4_show('nav_3_5_1','nav_3_5_2','nav_3_5_3','nav_3_5_4')"
+                            href="javascript:void(0)" class="nav-link">美食教学</a></li>
+                    <li class="nav-item"><a onclick="nav_3_4_show('nav_3_5_2','nav_3_5_1','nav_3_5_3','nav_3_5_4')"
+                            href="javascript:void(0)" class="nav-link">厨房妙招</a></li>
+                    <li class="nav-item"><a onclick="nav_3_4_show('nav_3_5_3','nav_3_5_2','nav_3_5_1','nav_3_5_4')"
+                            href="javascript:void(0)" class="nav-link">美食欣赏</a></li>
+                    <li class="nav-item"><a onclick="nav_3_4_show('nav_3_5_4','nav_3_5_2','nav_3_5_3','nav_3_5_1')"
+                            href="javascript:void(0)" class="nav-link">美食综艺</a></li>
+                </ul>
+                <div class="nav_3d">
+                    <ul id="nav_3_5_1" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">基础教学</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">美食进阶</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">高端美食</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">家常便饭</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">宴会party</a></li>
+                    </ul>
+                    <ul id="nav_3_5_2" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">食材处理</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">烹饪技巧</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">搭配技巧</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">清洁安全</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">储藏技巧</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">辨别食材</a></li>
+                    </ul>
+                    <ul id="nav_3_5_3" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">美食前沿</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">传统美食</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">地方特色</a></li>
+                    </ul>
+                    <ul id="nav_3_5_4" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">国内综艺</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">美国综艺</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">日本综艺</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">韩国综艺</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">英国综艺</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">其他</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--轮播图-->
+    <div id="banner">
+        <div id="wrap" class="carousel" data-ride="carousel">
+            <!--主体-->
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img src="img/index/天妇罗拼盘.jpg" alt=""><span class="carousel-caption">天妇罗拼盘</span>
+                </div>
+                <div class="carousel-item"><img src="img/index/茄子豆角.jpg" alt=""><span class="carousel-caption">茄子豆角</span>
+                </div>
+                <div class="carousel-item"><img src="img/index/树莓pancake.jpg" alt=""><span class="carousel-caption">树莓pancake</span>
+                </div>
+                <div class="carousel-item"><img src="img/index/牛肉可乐饼.jpg" alt=""><span class="carousel-caption">牛肉可乐饼</span>
+                </div>
+                <div class="carousel-item"><img src="img/index/台湾三杯虾.jpg" alt=""><span class="carousel-caption">台湾三杯虾</span>
+                </div>
+            </div>
+            <!--左右按钮-->
+            <a href="#wrap" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <a href="#wrap" class="carousel-control-prev" data-slide="next">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <!--指示器-->
+            <ul class="carousel-indicators">
+                <li data-target="#wrap" data-slide-to="0" class="active"></li>
+                <li data-target="#wrap" data-slide-to="1"></li>
+                <li data-target="#wrap" data-slide-to="2"></li>
+                <li data-target="#wrap" data-slide-to="3"></li>
+                <li data-target="#wrap" data-slide-to="4"></li>
+            </ul>
+        </div>
+    </div>
+    <!--轮播式主体-->
+    <section class="container-fluid">
+        <div id="mycar" class="carousel" data-ride="carousel">
+            <!--主体-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h3>热门菜谱</h3>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/酱油饭.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>酱油饭</h5>
+                                        <h6> 40 评论 27226 人气</h6>
+                                        <h6>作者:sourcheche</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">5步/10分钟</h6>
+                                        <h6><img src="" alt="">主食/酱香味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/彩椒虾仁.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>彩椒虾仁</h5>
+                                        <h6> 40 评论 27226 人气</h6>
+                                        <h6>作者:鑫鑫我爱你</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">5步/8分钟</h6>
+                                        <h6><img src="" alt="">热菜/海鲜</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/椒香五花肉.jpg" alt=""></div>
+                                    <div class="card-body-d1">
+                                        <h5>椒香五花肉</h5>
+                                        <h6> 40 评论 27226 人气</h6>
+                                        <h6>作者:蔡德华</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">8步/20分钟</h6>
+                                        <h6><img src="" alt="">晚餐/麻辣味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/凉拌茄子.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>凉拌茄子</h5>
+                                        <h6> 58 评论 37128 人气</h6>
+                                        <h6>作者:honey-jay</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">4步/10分钟</h6>
+                                        <h6><img src="" alt="">凉菜/酸甜味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/茄汁豆腐.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>茄汁豆腐</h5>
+                                        <h6> 125 评论 68951 人气</h6>
+                                        <h6>作者:小闷骚</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">6步/15分钟</h6>
+                                        <h6><img src="" alt="">素食/酸甜味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/腌黄瓜.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>腌黄瓜</h5>
+                                        <h6> 15 评论 15269 人气</h6>
+                                        <h6>作者:宝宝很可爱</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">4步/10分钟</h6>
+                                        <h6><img src="" alt="">凉菜/酸味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/台湾卤肉饭.jpg" alt=""></div>
+                                    <div class="card-body-d1">
+                                        <h5>台湾卤肉饭</h5>
+                                        <h6> 158 评论 75462 人气</h6>
+                                        <h6>作者:jjoney</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">9步/30分钟</h6>
+                                        <h6><img src="" alt="">主食/酱香味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/咸蛋黄虾仁豆腐.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>咸蛋黄虾仁豆腐</h5>
+                                        <h6> 268 评论 89541 人气</h6>
+                                        <h6>作者:天天不一样</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">8步/15分钟</h6>
+                                        <h6><img src="" alt="">海鲜/咸鲜味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h3>今日推荐</h3>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/干锅蒜香鲳鱼.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>干锅蒜香鲳鱼</h5>
+                                        <h6> 49 评论 79026 人气</h6>
+                                        <h6>作者:18岁ad想打职业</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">5步/20分钟</h6>
+                                        <h6><img src="" alt="">海鲜/酱香味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/零难度日式鸡肉串.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>零难度日式鸡肉串</h5>
+                                        <h6> 108 评论 56946 人气</h6>
+                                        <h6>作者:有本事打我呀</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">5步/15分钟</h6>
+                                        <h6><img src="" alt="">热菜/鲜甜味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/乱炖之猪肉粉条.jpg" alt=""></div>
+                                    <div class="card-body-d1">
+                                        <h5>乱炖之猪肉粉条</h5>
+                                        <h6> 18 评论 20261 人气</h6>
+                                        <h6>作者:五五开</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">8步/30分钟</h6>
+                                        <h6><img src="" alt="">晚餐/酱香味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/爽口藕片.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>爽口藕片</h5>
+                                        <h6> 58 评论 38828 人气</h6>
+                                        <h6>作者:honey-jay</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">4步/10分钟</h6>
+                                        <h6><img src="" alt="">凉菜/酸甜味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/丝瓜炖豆腐.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>丝瓜炖豆腐</h5>
+                                        <h6> 113 评论 64561 人气</h6>
+                                        <h6>作者:德云色</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">3步/15分钟</h6>
+                                        <h6><img src="" alt="">素食/美容</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/香酥反沙馒头条.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>香酥反沙馒头条</h5>
+                                        <h6> 15 评论 15269 人气</h6>
+                                        <h6>作者:宝宝很可爱</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">4步/10分钟</h6>
+                                        <h6><img src="" alt="">主食/香甜味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/糖醋素排骨.jpg" alt=""></div>
+                                    <div class="card-body-d1">
+                                        <h5>糖醋素排骨</h5>
+                                        <h6> 452 评论 151220 人气</h6>
+                                        <h6>作者:clearlove</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">9步/30分钟</h6>
+                                        <h6><img src="" alt="">晚餐/酸甜味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/猪嘟嘟馒头.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>猪嘟嘟馒头</h5>
+                                        <h6> 260 评论 59541 人气</h6>
+                                        <h6>作者:天天不一样</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">8步/35分钟</h6>
+                                        <h6><img src="" alt="">主食/咸鲜味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h3>本周人气</h3>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/豆豉炒饭.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>豆豉炒饭</h5>
+                                        <h6> 21 评论 15226 人气</h6>
+                                        <h6>作者:nodejs</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">5步/10分钟</h6>
+                                        <h6><img src="" alt="">主食/酱香味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/搞怪蛋白糖.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>搞怪蛋白糖</h5>
+                                        <h6> 78 评论 55169 人气</h6>
+                                        <h6>作者:不给糖就捣蛋</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">5步/15分钟</h6>
+                                        <h6><img src="" alt="">甜品/万圣节</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/酱油卤蛋.jpg" alt=""></div>
+                                    <div class="card-body-d1">
+                                        <h5>酱油卤蛋</h5>
+                                        <h6> 40 评论 27226 人气</h6>
+                                        <h6>作者:蔡德华</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">3步/20分钟</h6>
+                                        <h6><img src="" alt="">小吃/酱香味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/奶油泡芙.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>奶油泡芙</h5>
+                                        <h6> 102 评论 54778 人气</h6>
+                                        <h6>作者:小叮当</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">4步/15分钟</h6>
+                                        <h6><img src="" alt="">甜品/奶香味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/万圣节布朗尼小鬼.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>万圣节布朗尼小鬼</h5>
+                                        <h6> 451 评论 120150 人气</h6>
+                                        <h6>作者:哼不理你了</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">6步/35分钟</h6>
+                                        <h6><img src="" alt="">甜品/万圣节</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/酸辣藕带.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>酸辣藕带</h5>
+                                        <h6> 76 评论 59486 人气</h6>
+                                        <h6>作者:宝宝很可爱</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">4步/10分钟</h6>
+                                        <h6><img src="" alt="">凉菜/酸味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/椰蓉花环面包.jpg" alt=""></div>
+                                    <div class="card-body-d1">
+                                        <h5>椰蓉花环面包</h5>
+                                        <h6> 158 评论 57585 人气</h6>
+                                        <h6>作者:大司马</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">9步/30分钟</h6>
+                                        <h6><img src="" alt="">主食/香甜</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/蛋黄焗皮皮虾.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>蛋黄焗皮皮虾</h5>
+                                        <h6> 794 评论 189981 人气</h6>
+                                        <h6>作者:就爱吃海鲜</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">8步/25分钟</h6>
+                                        <h6><img src="" alt="">海鲜/咸鲜味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h3>新品上榜</h3>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/山东巧果.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>山东巧果</h5>
+                                        <h6> 0 评论 226 人气</h6>
+                                        <h6>作者:不搞基不舒服斯基</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">5步/40分钟</h6>
+                                        <h6><img src="" alt="">小吃/香甜味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/馄饨皮鸡蛋灌饼.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>馄饨皮鸡蛋灌饼</h5>
+                                        <h6> 10 评论 11226 人气</h6>
+                                        <h6>作者:冰岛之恋</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">5步/8分钟</h6>
+                                        <h6><img src="" alt="">主食/家常菜</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/土豆仔烧牛腩.jpg" alt=""></div>
+                                    <div class="card-body-d1">
+                                        <h5>土豆仔烧牛腩</h5>
+                                        <h6> 20 评论 8226 人气</h6>
+                                        <h6>作者:搞姬日常</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">6步/50分钟</h6>
+                                        <h6><img src="" alt="">晚餐/酱香味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/板栗烧鸡.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>板栗烧鸡</h5>
+                                        <h6> 28 评论 6128 人气</h6>
+                                        <h6>作者:新垣结衣我老婆</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">6步/30分钟</h6>
+                                        <h6><img src="" alt="">晚餐/咸甜味</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/家常包子.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>家常包子</h5>
+                                        <h6> 15 评论 651 人气</h6>
+                                        <h6>作者:村里我最帅</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">6步/45分钟</h6>
+                                        <h6><img src="" alt="">主食/家常菜</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/小鸡炖蘑菇.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>小鸡炖蘑菇</h5>
+                                        <h6> 15 评论 5269 人气</h6>
+                                        <h6>作者:小栗旬我老公</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">5步/30分钟</h6>
+                                        <h6><img src="" alt="">晚餐/炖菜</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/秘制八宝粥.jpg" alt=""></div>
+                                    <div class="card-body-d1">
+                                        <h5>秘制八宝粥</h5>
+                                        <h6> 26 评论 7521 人气</h6>
+                                        <h6>作者:冬天吃冰棒</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">6步/30分钟</h6>
+                                        <h6><img src="" alt="">主食/米粥</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/index/羊肉咖喱配法棍.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>羊肉咖喱配法棍</h5>
+                                        <h6> 68 评论 26541 人气</h6>
+                                        <h6>作者:芝士控</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">8步/60分钟</h6>
+                                        <h6><img src="" alt="">晚餐/咖喱</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--左右按钮-->
+            <a href="#mycar" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <a href="#mycar" class="carousel-control-prev" data-slide="next">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <!--指示器-->
+            <ul class="carousel-indicators">
+                <li data-target="#mycar" data-slide-to="0" class="active"></li>
+                <li data-target="#mycar" data-slide-to="1"></li>
+                <li data-target="#mycar" data-slide-to="2"></li>
+                <li data-target="#mycar" data-slide-to="3"></li>
+            </ul>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <div id="mycar1" class="carousel" data-ride="carousel">
+            <!--主体-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h3>料理机|微波炉</h3>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/blenders1.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>格兰仕h5700料理机</h5>
+                                        <h6>已售:416</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥556.00</h6>
+                                        <h6><img src="" alt="">现价:￥398.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/blenders2.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>格兰仕h5900料理机</h5>
+                                        <h6>已售:856</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥626.00</h6>
+                                        <h6><img src="" alt="">现价:￥488.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/blenders3.jpg" alt=""></div>
+                                    <div class="card-body-d1">
+                                        <h5>格兰仕h5800料理机</h5>
+                                        <h6>已售:485</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥586.00</h6>
+                                        <h6><img src="" alt="">现价:￥458.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/blenders4.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>格兰仕s3200料理机</h5>
+                                        <h6>已售:325</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥608.00</h6>
+                                        <h6><img src="" alt="">现价:￥428.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/wbl1.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>美的3320微波炉</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥488.00</h6>
+                                        <h6><img src="" alt="">现价:￥398.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/wbl4.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>美的h-20光波炉</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥678.00</h6>
+                                        <h6><img src="" alt="">现价:￥588.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/wbl3.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>美的新煮意320微波炉</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥528.00</h6>
+                                        <h6><img src="" alt="">现价:￥418.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/wbl2.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>美的新煮意370微波炉</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥558.00</h6>
+                                        <h6><img src="" alt="">现价:￥468.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h3>炒锅|平底锅</h3>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/pro-pan1.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>怀石纯大理石平底锅</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥388.00</h6>
+                                        <h6><img src="" alt="">现价:￥368.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/pro-pan1.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>怀石纯大理石平底锅</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥388.00</h6>
+                                        <h6><img src="" alt="">现价:￥368.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/pro-pan7.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>怀石纯大理石平底锅</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥388.00</h6>
+                                        <h6><img src="" alt="">现价:￥368.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/pro-pan6.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>怀石纯大理石平底锅</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥388.00</h6>
+                                        <h6><img src="" alt="">现价:￥368.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/pro-pan5.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>怀石纯大理石平底锅</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥388.00</h6>
+                                        <h6><img src="" alt="">现价:￥368.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/pro-pan4.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>怀石纯大理石平底锅</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥388.00</h6>
+                                        <h6><img src="" alt="">现价:￥368.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/pro-pan1.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>怀石纯大理石平底锅</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥388.00</h6>
+                                        <h6><img src="" alt="">现价:￥368.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/pro-pan3.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>怀石纯大理石平底锅</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥388.00</h6>
+                                        <h6><img src="" alt="">现价:￥368.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h3>烤箱</h3>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/kx1.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>美的k210白云烤箱</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥388.00</h6>
+                                        <h6><img src="" alt="">现价:￥368.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/kx2.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>美的k210白云烤箱</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥388.00</h6>
+                                        <h6><img src="" alt="">现价:￥368.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/kx3.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>美的k210白云烤箱</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥388.00</h6>
+                                        <h6><img src="" alt="">现价:￥368.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/kx4.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>美的k210白云烤箱</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥388.00</h6>
+                                        <h6><img src="" alt="">现价:￥368.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/kx5.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>美的k210白云烤箱</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥388.00</h6>
+                                        <h6><img src="" alt="">现价:￥368.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/kx6.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>美的k210白云烤箱</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥388.00</h6>
+                                        <h6><img src="" alt="">现价:￥368.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/kx7.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>美的k210白云烤箱</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥388.00</h6>
+                                        <h6><img src="" alt="">现价:￥368.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="card">
+                                <a href="" class="card-body">
+                                    <div><img src="img/product/kx8.jpg" alt="">
+                                    </div>
+                                    <div class="card-body-d1">
+                                        <h5>美的k210白云烤箱</h5>
+                                        <h6>已售:225</h6>
+                                        <h6>库存:999</h6>
+                                    </div>
+                                    <div class="card-body-d2">
+                                        <h6><img src="" alt="">原价:￥388.00</h6>
+                                        <h6><img src="" alt="">现价:￥368.00</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--左右按钮-->
+            <a href="#mycar1" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <a href="#mycar1" class="carousel-control-prev" data-slide="next">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <!--指示器-->
+            <ul class="carousel-indicators">
+                <li data-target="#mycar" data-slide-to="0" class="active"></li>
+                <li data-target="#mycar1" data-slide-to="1"></li>
+                <li data-target="#mycar1" data-slide-to="2"></li>
+            </ul>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="container-fluid">
+        <div id="foot-d1">
+            <p class="footer_p">
+                菜谱库:<strong> 60,000 篇</strong><br />
+                访问数量:<strong> 200,000 次</strong><br />
+                菜谱浏览量:<strong> 36,000,000 次</strong><br />
+                现在，这些数字还在不断的<strong>增长</strong>着，欢迎您来到<strong>CookCookie</strong></p>
+        </div>
+        <div id="foot-d3">
+            <ul class="nav justify-content-around">
+                <li class="nav-item">
+
+                    <p><a class="nav-link" target="_blank" href=""><img class="footer_img" src="img/index/sina.jpg"
+                                alt=""><br>点击进入<br />CookCookie官方微博</a></p>
+                </li>
+                <li class="nav-item">
+
+                    <p><a class="nav-link" target="_blank" href=""><img class="footer_img" src="img/index/QQzone1.jpg"
+                                alt=""><br>点击进入<br>CookCookie-QQ空间</a></p>
+                </li>
+                <li class="nav-item">
+
+                    <p><a class="nav-link" target="_blank" href=""><img class="footer_img" src="img/index/weixin.jpg"
+                                alt=""><br>扫描二维码添加<br />CookCookie微信公众号</a></p>
+                </li>
+                <li class="nav-item">
+
+                    <p><a class="nav-link" target="_blank" href=""><img class="footer_img" src="img/index/quqi.jpg"
+                                alt=""><br>扫描二维码下载<br />CookCookie-App</a></p>
+                </li>
+            </ul>
+        </div>
+        <div id="foot-d2">
+            <ul class="nav justify-content-around">
+                <li class="nav-iten"><a class="nav-link footer_a" target="_blank" href="" title="公司简介">公司简介</a></li>
+                <li class="nav-iten"><a class="nav-link footer_a" target="_blank" href="" title="企业文化">企业文化</a></li>
+                <li class="nav-iten"><a class="nav-link footer_a" target="_blank" href="" title="免责声明">免责声明</a></li>
+                <li class="nav-iten"><a class="nav-link footer_a" target="_blank" href="" title="联系我们">联系我们</a></li>
+                <li class="nav-iten"><a class="nav-link footer_a" target="_blank" href="" title="商务合作">商务合作</a></li>
+            </ul>
+        </div>
+        <div id="footer_bottom">
+            <p>
+                <a class=" footer_a" target="_blank" href="" class="">京ICP备33333333号</a>
+                <a class=" footer_a" target="_blank" href="" class=""><img src="img/index/gongan.png" />京公网安备11123412341234</a>
+                Copyright © 2003-2018 CookCookie.
+            </p>
+        </div>
+        </div>
+    </footer>
+    <aside>
+        <div>
+            <ul id="floatWindow">
+                <li><a><img src="img/index/搜索.png" alt=""></a></li>
+                <li><a><img src="img/index/标星.png" alt=""></a></li>
+                <li><a href="#"><img src="img/index/顶部.png" alt=""></a></li>
+            </ul>
+        </div>
+    </aside>
+</body>
+
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CookCookie-个人主页</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/user_details.css">
+    <link rel="stylesheet" href="css/user_center.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header class="container-fluid">
+        <div class="row">
+            <div id="head_left" class="col-md-3 col-sm-12 border-0">
+                <div class="row">
+                    <a class="" href=""><img class="col-3" src="../img/index/quqi.jpg">
+                        <span class="col-8">CookCookie</span>
+                    </a>
+                </div>
+            </div>
+            <div id="head_center" class="col-md-6 col-sm-12">
+                <form>
+                    <input type="text" placeholder="请输入搜索的内容">
+                    <button type="submit"></button>
+                </form>
+            </div>
+            <div id="head_right" class="col-md-3 col-sm-12">
+                <div id="login_no" class="row">
+                    <a href="login_register.html">QQ登录</a>
+                    <a href="login_register.html">微博登录</a>
+                    <a href="login_register.html">用户登录</a>
+                    <a href="login_register.html">用户注册</a>
+                </div>
+                <div id="login_yes" class="row">
+                    <ul>
+                        <li id="headimg">
+                            <img src="img/login_register/cookielogo.png" alt="">
+                        </li>
+                        <li>
+                            <span>Garyull</span>
+                            <ul>
+                                <li><a href="">个人中心</a></li>
+                                <li><a href="">修改资料</a></li>
+                                <li><a href="#" onclick="login_out()">退出登录</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--nav-->
+    <nav>
+        <div class="container-fluid">
+            <ul class="nav justify-content-around nav_1">
+                <li class="nav-item">
+                    <a id="n1_2" class="nav-link" onclick="nav_2_show('n2_1','n2_2','n2_3','n2_4','n2_5')" href="javascript:void(0)">美食菜单</a>
+                </li>
+                <li class="nav-item">
+                    <a id="n1_3" class="nav-link" onclick="nav_2_show('n2_2','n2_1','n2_3','n2_4','n2_5')" href="javascript:void(0)">饮食健康</a>
+                </li>
+                <li class="nav-item">
+                    <a id="n1_4" class="nav-link" onclick="nav_2_show('n2_3','n2_1','n2_2','n2_4','n2_5')" href="javascript:void(0)">厨具餐具</a>
+                </li>
+                <li class="nav-item">
+                    <a id="n1_5" class="nav-link" onclick="nav_2_show('n2_4','n2_1','n2_2','n2_3','n2_5')" href="javascript:void(0)">美食达人</a>
+                </li>
+                <li class="nav-item">
+                    <a id="n1_6" class="nav-link" onclick="nav_2_show('n2_5','n2_1','n2_2','n2_3','n2_4')" href="javascript:void(0)">视频分享</a>
+                </li>
+            </ul>
+        </div>
+        <div id="n2_1" class="container-fluid" style="display:none">
+            <div id="navbox_1" class="nav flex-nowrap">
+                <ul class="nav justify-content-around flex-column nav_2 ">
+                    <li class="nav-item"><a onclick="nav_3_1_show('nav_3_1_1','nav_3_1_2','nav_3_1_3','nav_3_1_4','nav_3_1_5','nav_3_1_6')"
+                            href="javascript:void(0)" class="nav-link">家常菜谱</a></li>
+                    <li class="nav-item"><a onclick="nav_3_1_show('nav_3_1_2','nav_3_1_1','nav_3_1_3','nav_3_1_4','nav_3_1_5','nav_3_1_6')"
+                            href="javascript:void(0)" class="nav-link">八大菜系</a></li>
+                    <li class="nav-item"><a onclick="nav_3_1_show('nav_3_1_3','nav_3_1_2','nav_3_1_1','nav_3_1_4','nav_3_1_5','nav_3_1_6')"
+                            href="javascript:void(0)" class="nav-link">外国菜系</a></li>
+                    <li class="nav-item"><a onclick="nav_3_1_show('nav_3_1_4','nav_3_1_2','nav_3_1_3','nav_3_1_1','nav_3_1_5','nav_3_1_6')"
+                            href="javascript:void(0)" class="nav-link">各地小吃</a></li>
+                    <li class="nav-item"><a onclick="nav_3_1_show('nav_3_1_5','nav_3_1_2','nav_3_1_3','nav_3_1_4','nav_3_1_1','nav_3_1_6')"
+                            href="javascript:void(0)" class="nav-link">蛋糕烘焙</a></li>
+                    <li class="nav-item"><a onclick="nav_3_1_show('nav_3_1_6','nav_3_1_2','nav_3_1_3','nav_3_1_4','nav_3_1_5','nav_3_1_1')"
+                            href="javascript:void(0)" class="nav-link">调酒饮料</a></li>
+                </ul>
+                <div class="nav_3d">
+                    <ul id="nav_3_1_1" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">凉菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">热菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">海鲜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">主食</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">早餐</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">中餐</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">晚餐</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">靓汤</a></li>
+                    </ul>
+                    <ul id="nav_3_1_2" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">鲁菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">川菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">苏菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">粤菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">浙菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">闽菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">湘菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">徽菜</a></li>
+                    </ul>
+                    <ul id="nav_3_1_3" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">日本菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">韩国菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">泰国菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">意大利菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">西班牙菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">英国菜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">法国菜</a></li>
+                    </ul>
+                    <ul id="nav_3_1_4" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">湖北小吃</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">陕西小吃</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">山东小吃</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">浙江小吃</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">四川小吃</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">广东小吃</a></li>
+                    </ul>
+                    <ul id="nav_3_1_5" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">蛋糕</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">慕斯</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">饼干</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">巧克力</a></li>
+                    </ul>
+                    <ul id="nav_3_1_6" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">鸡尾酒</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">保健酒</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">夏日饮品</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">暖冬饮品</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">咖啡</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="n2_2" class="container-fluid" style="display:none">
+            <div id="navbox_2" class="nav flex-nowrap">
+                <ul class="nav justify-content-around flex-column nav_2">
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_2_1','nav_3_2_2','nav_3_2_3','nav_3_2_4','nav_3_2_5')"
+                            href="javascript:void(0)" class="nav-link">功能调理</a></li>
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_2_2','nav_3_2_1','nav_3_2_3','nav_3_2_4','nav_3_2_5')"
+                            href="javascript:void(0)" class="nav-link">脏腑调理</a></li>
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_2_3','nav_3_2_2','nav_3_2_1','nav_3_2_4','nav_3_2_5')"
+                            href="javascript:void(0)" class="nav-link">疾病调理</a></li>
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_2_4','nav_3_2_2','nav_3_2_3','nav_3_2_1','nav_3_2_5')"
+                            href="javascript:void(0)" class="nav-link">健康膳食</a></li>
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_2_5','nav_3_2_2','nav_3_2_3','nav_3_2_4','nav_3_2_1')"
+                            href="javascript:void(0)" class="nav-link">饮食习惯</a></li>
+                </ul>
+                <div class="nav_3d">
+                    <ul id="nav_3_2_1" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">清热去火</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">减脂增肌</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">祛痰润喉</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">健脾开胃</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">乌发</a></li>
+                    </ul>
+                    <ul id="nav_3_2_2" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">补肾</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">养胃</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">壮阳</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">补血</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">促进愈合</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">排毒</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">调理肠胃</a></li>
+                    </ul>
+                    <ul id="nav_3_2_3" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">糖尿病</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">高血压</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">痛风</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">肠胃炎</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">更年期</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">甲状腺</a></li>
+                    </ul>
+                    <ul id="nav_3_2_4" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">美容</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">瘦身</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">食品安全</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">养生妙方</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">食疗保健</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">母婴健康</a></li>
+                    </ul>
+                    <ul id="nav_3_2_5" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">清淡饮食</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">就餐时间</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">果蔬清洗</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">冷热</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">季节</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">荤素搭配</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="n2_3" class="container-fluid" style="display:none">
+            <div id="navbox_3" class="nav flex-nowrap">
+                <ul class="nav justify-content-around flex-column nav_2">
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_3_1','nav_3_3_2','nav_3_3_3','nav_3_3_4','nav_3_5')"
+                            href="javascript:void(0)" class="nav-link">精品厨具</a></li>
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_3_2','nav_3_3_1','nav_3_3_3','nav_3_3_4','nav_3_5')"
+                            href="javascript:void(0)" class="nav-link">精品餐具</a></li>
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_3_3','nav_3_3_2','nav_3_3_1','nav_3_3_4','nav_3_5')"
+                            href="javascript:void(0)" class="nav-link">厨房百科</a></li>
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_3_4','nav_3_3_2','nav_3_3_3','nav_3_3_1','nav_3_5')"
+                            href="javascript:void(0)" class="nav-link">装饰搭配</a></li>
+                    <li class="nav-item"><a onclick="nav_3_2_show('nav_3_3_5','nav_3_3_2','nav_3_3_3','nav_3_3_4','nav_3_1')"
+                            href="javascript:void(0)" class="nav-link">餐桌礼仪</a></li>
+                </ul>
+                <div class="nav_3d">
+                    <ul id="nav_3_3_1" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">锅</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">刀具</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">砧板</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">烤箱</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">微波炉</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">调料盒</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">特殊工具</a></li>
+                    </ul>
+                    <ul id="nav_3_3_2" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">碗</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">盘</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">筷子</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">刀叉</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">勺</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">杯子</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">特殊餐具</a></li>
+                    </ul>
+                    <ul id="nav_3_3_3" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">厨房小妙招</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">合理布局</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">清洁卫生</a></li>
+                    </ul>
+                    <ul id="nav_3_3_4" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">橱柜</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">台面</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">水池</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">储存</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">排烟</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">炉灶</a></li>
+                    </ul>
+                    <ul id="nav_3_3_5" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">餐前事项</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">餐桌谈话</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">宴会相关</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">各国习俗</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">仪容仪表</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="n2_4" class="container-fluid" style="display:none">
+            <div id="navbox_4" class="nav flex-nowrap">
+                <ul class="nav justify-content-around flex-column nav_2">
+                    <li class="nav-item"><a onclick="nav_3_4_show('nav_3_4_1','nav_3_4_2','nav_3_4_3','nav_3_4_4')"
+                            href="javascript:void(0)" class="nav-link">我的首页</a></li>
+                    <li class="nav-item"><a onclick="nav_3_4_show('nav_3_4_2','nav_3_4_1','nav_3_4_3','nav_3_4_4')"
+                            href="javascript:void(0)" class="nav-link">我的关注</a></li>
+                    <li class="nav-item"><a onclick="nav_3_4_show('nav_3_4_3','nav_3_4_2','nav_3_4_1','nav_3_4_4')"
+                            href="javascript:void(0)" class="nav-link">我的粉丝</a></li>
+                    <li class="nav-item"><a onclick="nav_3_4_show('nav_3_4_4','nav_3_4_2','nav_3_4_3','nav_3_4_1')"
+                            href="javascript:void(0)" class="nav-link">我的作品</a></li>
+                </ul>
+                <div class="nav_3d">
+                    <ul id="nav_3_4_1" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">今日推荐</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">热门菜谱</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">热门话题</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">热门文章</a></li>
+                    </ul>
+                    <ul id="nav_3_4_2" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">明星大咔</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">同事</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">同学</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">亲戚</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">美食达人</a></li>
+                    </ul>
+                    <ul id="nav_3_4_3" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">粉丝列表</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">粉丝管理</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">黑名单</a></li>
+                    </ul>
+                    <ul id="nav_3_4_4" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">我的菜谱</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">我的投稿</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">赞</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">收藏</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">特别关注</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="n2_5" class="container-fluid" style="display:none">
+            <div id="navbox_5" class="nav flex-nowrap">
+                <ul class="nav justify-content-around flex-column nav_2">
+                    <li class="nav-item"><a onclick="nav_3_4_show('nav_3_5_1','nav_3_5_2','nav_3_5_3','nav_3_5_4')"
+                            href="javascript:void(0)" class="nav-link">美食教学</a></li>
+                    <li class="nav-item"><a onclick="nav_3_4_show('nav_3_5_2','nav_3_5_1','nav_3_5_3','nav_3_5_4')"
+                            href="javascript:void(0)" class="nav-link">厨房妙招</a></li>
+                    <li class="nav-item"><a onclick="nav_3_4_show('nav_3_5_3','nav_3_5_2','nav_3_5_1','nav_3_5_4')"
+                            href="javascript:void(0)" class="nav-link">美食欣赏</a></li>
+                    <li class="nav-item"><a onclick="nav_3_4_show('nav_3_5_4','nav_3_5_2','nav_3_5_3','nav_3_5_1')"
+                            href="javascript:void(0)" class="nav-link">美食综艺</a></li>
+                </ul>
+                <div class="nav_3d">
+                    <ul id="nav_3_5_1" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">基础教学</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">美食进阶</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">高端美食</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">家常便饭</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">宴会party</a></li>
+                    </ul>
+                    <ul id="nav_3_5_2" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">食材处理</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">烹饪技巧</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">搭配技巧</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">清洁安全</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">储藏技巧</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">辨别食材</a></li>
+                    </ul>
+                    <ul id="nav_3_5_3" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">美食前沿</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">传统美食</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">地方特色</a></li>
+                    </ul>
+                    <ul id="nav_3_5_4" class="nav nav_3" style="visibility:hidden">
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">国内综艺</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">美国综艺</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">日本综艺</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">韩国综艺</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">英国综艺</a></li>
+                        <li class="nav-item"><a href="javascript:void(0)" class="nav-link">其他</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- section -->
+    <section>
+        <h1>Garyull 的个人主页</h1>
+        <div id="userHeader" class="row">
+            <div class="col-3">
+                <img src="img/cookbook/测试头像1.jpg" alt="">
+            </div>
+            <div class="col-6">
+                <div>
+                    <h1>Garyull <a>Lv.1</a></h1>
+                    <span class="info">
+                        <em><a>积分：79</a></em> |
+                        <em><a>经验值：57</a></em><br />
+                        <em>男</em>
+                        |<em>湖北 武汉 </em> |
+                        <em>2018-10-13 加入CookCookie</em><br>
+                        <em><a>编辑个人资料</a></em>
+                    </span>
+                </div>
+                <p>个性签名：“helloworld”</p>
+            </div>
+            <div class="col-3">
+                <ul class="row">
+                    <li class="col-6">
+                        <a href="">
+                            <span>关注</span>
+                            <span>153</span>
+                        </a>
+                    </li>
+                    <li class="col-6">
+                        <a href="">
+                            <span>粉丝</span>
+                            <span>129852</span>
+                        </a>
+                    </li>
+                    <li class="col-6">
+                        <a href="">
+                            <span>菜谱</span>
+                            <span>258</span>
+                        </a>
+                    </li>
+                    <li class="col-6">
+                        <a href="">
+                            <span>文章</span>
+                            <span>69</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="userNav">
+            <ul class="row">
+                <li class="col-2"><a>动态</a></li>
+                <li class="col-2"><a>菜谱</a></li>
+                <li class="col-2"><a>文章</a></li>
+                <li class="col-2"><a>关注</a></li>
+                <li class="col-2"><a>粉丝</a></li>
+                <li class="col-2"><a>收藏</a></li>
+            </ul>
+        </div>
+        <div id="userMain" class="row">
+            <div class="col-9">暂时还没有动态哦，看去看看小伙伴们的动态吧！</div>
+            <div class="col-3"></div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="container-fluid">
+        <div id="foot-d1">
+            <p class="footer_p">
+                菜谱库:<strong> 60,000 篇</strong><br />
+                访问数量:<strong> 200,000 次</strong><br />
+                菜谱浏览量:<strong> 36,000,000 次</strong><br />
+                现在，这些数字还在不断的<strong>增长</strong>着，欢迎您来到<strong>CookCookie</strong></p>
+        </div>
+        <div id="foot-d3">
+            <ul class="nav justify-content-around">
+                <li class="nav-item">
+
+                    <p><a class="nav-link" target="_blank" href=""><img class="footer_img" src="img/index/sina.jpg"
+                                alt=""><br>点击进入<br />CookCookie官方微博</a></p>
+                </li>
+                <li class="nav-item">
+
+                    <p><a class="nav-link" target="_blank" href=""><img class="footer_img" src="img/index/QQzone1.jpg"
+                                alt=""><br>点击进入<br>CookCookie-QQ空间</a></p>
+                </li>
+                <li class="nav-item">
+
+                    <p><a class="nav-link" target="_blank" href=""><img class="footer_img" src="img/index/weixin.jpg"
+                                alt=""><br>扫描二维码添加<br />CookCookie微信公众号</a></p>
+                </li>
+                <li class="nav-item">
+
+                    <p><a class="nav-link" target="_blank" href=""><img class="footer_img" src="img/index/quqi.jpg"
+                                alt=""><br>扫描二维码下载<br />CookCookie-App</a></p>
+                </li>
+            </ul>
+        </div>
+        <div id="foot-d2">
+            <ul class="nav justify-content-around">
+                <li class="nav-iten"><a class="nav-link footer_a" target="_blank" href="" title="公司简介">公司简介</a></li>
+                <li class="nav-iten"><a class="nav-link footer_a" target="_blank" href="" title="企业文化">企业文化</a></li>
+                <li class="nav-iten"><a class="nav-link footer_a" target="_blank" href="" title="免责声明">免责声明</a></li>
+                <li class="nav-iten"><a class="nav-link footer_a" target="_blank" href="" title="联系我们">联系我们</a></li>
+                <li class="nav-iten"><a class="nav-link footer_a" target="_blank" href="" title="商务合作">商务合作</a></li>
+            </ul>
+        </div>
+        <div id="footer_bottom">
+            <p>
+                <a class=" footer_a" target="_blank" href="" class="">京ICP备33333333号</a>
+                <a class=" footer_a" target="_blank" href="" class=""><img src="../img/index/gongan.png" />京公网安备11123412341234</a>
+                Copyright © 2003-2018 CookCookie.
+            </p>
+        </div>
+        </div>
+    </footer>
+    <aside>
+        <div>
+            <ul id="floatWindow">
+                <li><a><img src="img/index/搜索.png" alt=""></a></li>
+                <li><a><img src="img/index/标星.png" alt=""></a></li>
+                <li><a href="#"><img src="img/index/顶部.png" alt=""></a></li>
+            </ul>
+        </div>
+    </aside>
+</body>
+
+</html>

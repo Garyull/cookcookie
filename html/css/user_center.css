@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+section{
+    width: 100%;
+}
+section>h1{
+    width: 80%;
+    margin: 1rem auto;
+    text-align: center;
+    color: #f1a7a7;
+    border-bottom: 1px solid #f1a7a7;
+    padding: 1rem;
+}
+#userHeader{
+    width: 80%;
+    margin: 0 auto;
+}
+#userHeader>div:first-child>img{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 50%;
+    border:1px solid #f1a7a7;
+}
+
+#userHeader>div:nth-child(2) div h1{
+    font-size: 3vw;
+    color: rgb(109, 106, 106);
+}
+#userHeader>div:nth-child(2) p{
+    font-size: 1vw;
+    border-radius: 5px;
+    border-top:1px solid #f1a7a7;
+    min-height: 80px;
+    margin: 5px;
+    padding: 5px;
+}
+#userHeader>div:nth-child(2) div em{
+    margin: .5vw;
+    font-size: 1vw;
+}
+#userHeader>div:nth-child(2) div em a{
+    cursor: pointer;
+}
+#userHeader>div:last-child ul{
+    height: 100%;
+}
+#userHeader>div:last-child ul li{
+    height: 50%;
+    padding: 0;
+}
+
+#userHeader>div:last-child ul li a{
+    box-sizing: border-box;
+    border: 1px solid #f1a7a7;
+    display: block;
+    width: 95%;
+    height: 95%;
+    margin: 0;
+    padding: 25% 0;
+    text-decoration: none;
+    transition: all .8s linear;
+}
+#userHeader>div:last-child ul>li:first-child  a{
+    border-radius: 50% 50% 10% 50%
+}
+#userHeader>div:last-child ul>li:nth-child(2)  a{
+    border-radius: 50% 50% 50% 10%
+}
+#userHeader>div:last-child ul>li:nth-child(3)  a{
+    border-radius: 50% 10% 50% 50%
+}
+#userHeader>div:last-child ul>li:nth-child(4)  a{
+    border-radius: 10% 50% 50% 50%
+}
+
+#userHeader>div:last-child ul>li:first-child  a:hover{
+    border-radius: 10% 50% 50% 50%;
+    background-color: #f1a7a7;
+}
+#userHeader>div:last-child ul>li:nth-child(2)  a:hover{
+    border-radius: 50% 10% 50% 50%;
+    background-color: #f1a7a7;
+}
+#userHeader>div:last-child ul>li:nth-child(3)  a:hover{
+    border-radius: 50% 50% 50% 10%;
+    background-color: #f1a7a7;
+}
+#userHeader>div:last-child ul>li:nth-child(4)  a:hover{
+    border-radius: 50% 50% 10% 50%;
+    background-color: #f1a7a7;
+}
+#userHeader>div:last-child ul li a span{
+    display: block;
+    font-size: 2vw;
+    color: #918989;
+    text-align: center;
+    font-weight: 500;
+}
+#userHeader>div:last-child ul li a:hover span{
+    transform: rotatey(360deg);
+    transition: all 1s ease;
+}
+
+
+#userMain{
+    width: 70%;
+    border: 1px solid #f1a7a7;
+    border-radius: 10px;;
+    height: 400px;
+    margin: 20px auto 40px;
+}
+#userMain div{
+    background-color: rgba(223, 217, 217,0.3);
+    height: 400px;
+    padding: 5%;
+    font-size: 1.5vw;
+    color: #918989;
+}
+
+#userNav{
+    border-top: 1px solid #f1a7a7;
+    margin-top: 20px;
+    padding: 15px;
+}
+#userNav ul li{
+    text-align: center;
+    font-size: 2vw;
+    color: #918989;
+    transition: all .2s linear;
+    box-sizing: border-box;
+}
+
+#userNav ul li:hover{
+    border-bottom: 2px solid #f1a7a7;
+    font-weight: 500;
+    color: #312f2f
+}
